@@ -3,6 +3,8 @@
 #include <sys/mman.h>
 #include <sys/types.h>
 #include <time.h>
+#include <unistd.h>
+#include <string.h>
 #include "wrapper.h"
 
 void jit_exec(long *);
