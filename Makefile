@@ -22,3 +22,6 @@ clean:
 zip:
 	/bin/rm -fR $(NAME).zip $(NAME)
 	zip -r $(NAME).zip Makefile wrapper.c jit_exec.s verified_code.s
+
+test:
+	./milawa2-jitawa.sh 100.events
