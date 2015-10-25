@@ -8,13 +8,7 @@ then
     exit 1
 fi
 
-if [ "`hostname`" == "killeen.centtech.com" ]
-then
-    echo "Refusing to run on killeen."
-    exit 1
-fi
-
-JITAWA=`which jitawa`
+JITAWA=./jitawa
 
 EVENTS=$1
 
